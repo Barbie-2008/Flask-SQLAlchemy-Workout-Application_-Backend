@@ -49,6 +49,8 @@ From the repository root, start the Flask development server:
 
 ```bash
 cd server
+pipenv run flask --app app db upgrade
+pipenv run python seed.py
 pipenv run flask --app app run --port 5555
 ```
 
